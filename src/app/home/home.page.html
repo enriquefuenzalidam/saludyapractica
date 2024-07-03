@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" >
+  <div class="flex justify-center items-center h-full w-full p-10">
+    <div class="flex flex-col justify-center items-center h-full w-full">
+      <div class="swiper flex justify-center items-center w-full">
+        <div class="swiper-wrapper w-full font-sans">
+          <div class="swiper-slide text-center">
+            <img src="assets/presentationscreen 1 .png" alt="Description 1" class="mx-auto h-80">
+            <h2 class="text-black dark:text-[#bbbbbb] font-semibold text-2xl md:text-3xl mt-5">Contacta con un especialista</h2>
+            <p class="text-black dark:text-white font-normal text-lg mt-2">¿Necesitas un especialista al instante? Esta es tu app</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="assets/presentationscreen 2 .png" alt="Description 2" class="mx-auto h-80">
+            <h2 class="text-black dark:text-[#bbbbbb] font-semibold text-2xl md:text-3xl mt-5">Ubicación del especialista en tiempo real</h2>
+            <p class="text-black dark:text-white font-normal text-lg mt-2">Transparencia de tiempos a nivel real</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="assets/presentationscreen 3 .png" alt="Description 3" class="mx-auto h-80">
+            <h2 class="text-black dark:text-[#bbbbbb] font-semibold text-2xl md:text-3xl mt-5">Flexibilidad de servicios a tu alcance</h2>
+            <p class="text-black dark:text-white font-normal text-lg mt-2">Aquí tienes distintos servicios que se ajustan a tu necesidad</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <a href=tologin class="text-white font-medium text-lg px-12 py-2 bg-[#6A70FE] dark:bg-[#1855F1] rounded-full border-2 border-black border-opacity-65 dark:border-opacity-65 mt-8">Inciar sesión</a>
+    </div>
   </div>
 </ion-content>
