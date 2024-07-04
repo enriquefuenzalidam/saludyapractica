@@ -41,10 +41,12 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
 
-:root {
-    --background-color-light: #D8F2F4;  // Light mode background
-    --background-color-dark: #333333;   // Dark mode background
-}
+/**
+* :root {
+*    --background-color-light: #D8F2F4;  // Light mode background
+*    --background-color-dark: #333333;   // Dark mode background
+* }
+ */
 
 /* Dark mode colors */
 @media (prefers-color-scheme: dark) {

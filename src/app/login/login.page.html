@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true" class=" bg-[#D8F2F4] dark:bg-[#333333]">
+  <div class="flex justify-center items-center h-full w-full p-10">
+    <div class="flex flex-col justify-center items-center h-full w-full text-center">
+      <ion-img [src]="logoSrc" alt="Logotip Salud Ya" class="w-10 lg:w-28 "></ion-img>
+      <p class="font-bold text-[#3171BA] dark:text-white text-lg lg:text-3xl mb-16 ">SaludYa</p>
+      <h3 class="font-bold text-[#3171BA] dark:text-white text-xl lg:text-4xl">Ingreso de usuario</h3>
+
+      <form class="w-full max-w-lg mt-8 text-center">
+        <div class="mb-10">
+          <input
+            class=" font-medium appearance-none w-full py-2 px-3 text-lg lg:text-3xl text-[#5a5a5a] dark:text-[#ffffff] leading-loose focus:outline-none focus:shadow-outline text-center bg-[#D8E8E7] bg-opacity-80 dark:bg-[#8C8586] dark:bg-opacity-100 rounded-full border-2 border-[#000000] border-opacity-65 dark:border-opacity-80"
+            id="email"
+            type="email"
+            placeholder="Correo electrónico"
+          />
+        </div>
+        <div class="mb-10">
+          <input
+            class=" font-medium appearance-none w-full py-2 px-3 text-lg lg:text-3xl text-[#5a5a5a] dark:text-[#ffffff] leading-loose focus:outline-none focus:shadow-outline text-center bg-[#D8E8E7] bg-opacity-80 dark:bg-[#8C8586] dark:bg-opacity-100 rounded-full border-2 border-[#000000] border-opacity-65 dark:border-opacity-80"
+            id="password"
+            type="password"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="flex items-center justify-between text-center">
+          <button class=" font-bold appearance-none m-auto w-full text-white text-lg lg:text-3xl py-2 focus:outline-none leading-loose focus:shadow-outline bg-[#6A70FE] dark:bg-[#1855F1] dark:bg-opacity-70 rounded-full border-2 border-[#000000] border-opacity-65 dark:border-opacity-80" type="button" >
+            Ingresar
+          </button>
+        </div>
+      </form>
+      <div class="text-black dark:text-white text-opacity-80 text-lg lg:text-1xl font-medium mt-10">
+        <p class="text-[#000AFD] dark:text-white"><a routerLink >Olvidé mi contraseña</a></p>
+        <p class="">¿No tienes una cuenta? <a class="text-[#000AFD] dark:text-white" routerLink >Regístrate</a></p>
+      </div>
+      <p class=" mt-10"><a routerLink >Google Sign In Button</a></p>
+    </div>
+  </div>
+</ion-content>
