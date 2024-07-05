@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'horasolicitud',
     loadChildren: () => import('./horasolicitud/horasolicitud.module').then( m => m.HorasolicitudPageModule)
   },
+  {
+    path: 'busquedamapa',
+    loadChildren: () => import('./busquedamapa/busquedamapa.module').then( m => m.BusquedamapaPageModule)
+  },
+  {
+    path: 'pagomedio',
+    loadChildren: () => import('./pagomedio/pagomedio.module').then( m => m.PagomedioPageModule)
+  },
 ];
 
 @NgModule({
