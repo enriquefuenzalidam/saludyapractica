@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
   },
+  {
+    path: 'iniciopantalla',
+    loadChildren: () => import('./iniciopantalla/iniciopantalla.module').then( m => m.IniciopantallaPageModule)
+  },
+  {
+    path: 'horasolicitud',
+    loadChildren: () => import('./horasolicitud/horasolicitud.module').then( m => m.HorasolicitudPageModule)
+  },
 ];
 
 @NgModule({
