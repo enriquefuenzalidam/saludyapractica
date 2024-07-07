@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { BusquedamapaPageRoutingModule } from './busquedamapa-routing.module';
 
 import { BusquedamapaPage } from './busquedamapa.page';
+import { SharedModule } from '../shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BusquedamapaPageRoutingModule
+    BusquedamapaPageRoutingModule,
+    SharedModule
   ],
   declarations: [BusquedamapaPage]
 })

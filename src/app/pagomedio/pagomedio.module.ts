@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PagomedioPageRoutingModule } from './pagomedio-routing.module';
 
 import { PagomedioPage } from './pagomedio.page';
+import { SharedModule } from '../shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PagomedioPageRoutingModule
+    PagomedioPageRoutingModule,
+    SharedModule
   ],
   declarations: [PagomedioPage]
 })
