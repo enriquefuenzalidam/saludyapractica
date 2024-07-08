@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.hopdre.saludya;
 
 import com.getcapacitor.BridgeActivity;
 
