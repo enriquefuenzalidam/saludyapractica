@@ -1,5 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
+import { IonicSlides } from '@ionic/angular';
+import { Title } from '@angular/platform-browser';
+
+
 
 @Component({
   selector: 'app-home',
@@ -8,10 +12,15 @@ import Swiper from 'swiper';
 })
 export class HomePage implements AfterViewInit {
 
+  swiperModules = [IonicSlides];
   private currentSlideIndex: number = 0;
 
-  constructor() {}
+  constructor(private titleService: Title) {}
 
+  ngOnInit() {
+    this.titleService.setTitle('Bienvenidos a SaludYa');
+  }
+  
   ngAfterViewInit() {
     new Swiper('.swiper', {
       loop: true,

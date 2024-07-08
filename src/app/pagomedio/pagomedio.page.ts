@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pagomedio',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagomedioPage implements OnInit {
 
-  constructor() { }
+  constructor( private titleService: Title) { }
 
-  ngOnInit() {
+  ngOnInit() { this.titleService.setTitle('Inicio | SaludYa');
   }
 
 }

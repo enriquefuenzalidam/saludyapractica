@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class LoginPage implements OnInit {
   logoSrc!: string;
 
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private titleService: Title) {
     this.updateLogo();
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', this.updateLogo.bind(this));
   }
@@ -23,7 +24,7 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/iniciopantalla']);
   }
 
-  ngOnInit() { }
+  ngOnInit() { this.titleService.setTitle('Ingreso | SaludYa'); }
 
   updateLogo() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
