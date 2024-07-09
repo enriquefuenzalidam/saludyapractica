@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "197756086151",
+    "project_id": "latasoft-saludya",
+    "storage_bucket": "latasoft-saludya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197756086151:android:e6e5c1f2cee0edd6955522",
+        "android_client_info": {
+          "package_name": "com.hopdre.saludya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197756086151-0a371fllkl03fph3ue7jd4mgulhgi1vh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hopdre.saludya",
+            "certificate_hash": "a38529eb7c9b83080b72299d21fa6144ef42079e"
+          }
+        },
+        {
+          "client_id": "197756086151-go1cfugf4a3qblmq1t0nmdi6sjq64pu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvfq4ENkohciZ5SCrwujJNaN2vokOSasY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197756086151-go1cfugf4a3qblmq1t0nmdi6sjq64pu6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
