@@ -27,8 +27,8 @@ export class LoginPage implements OnInit {
     private titleService: Title,
     private authService: AuthService,
     private afAuth: AngularFireAuth,
-    private auth: Auth,
-  ) {
+    private auth: Auth)
+  {
     this.updateLogo();
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', this.updateLogo.bind(this));
   }
@@ -44,7 +44,10 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.titleService.setTitle('Ingreso | SaludYa');
-    
+    this.checkAuthState();
+  }
+
+  checkAuthState() {
     authState(this.auth).pipe(take(1)).subscribe(user => {
       if (user) {
         this.router.navigate(['/iniciopantalla']);
@@ -63,7 +66,6 @@ export class LoginPage implements OnInit {
     }).catch((error) => {
       console.error(error);
     });
-
   }
 
   updateLogo() {
